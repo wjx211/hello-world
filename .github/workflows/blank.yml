@@ -16,5 +16,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           skopeo --help
-          docker run hello-world
+          docker info
+          docker images
+          skopeo copy  hello-world  docker://registry.cn-beijing.aliyuncs.com/wjx_test/test:hello-world
       - run: echo "🍏 This job's status is ${{ job.status }}."
