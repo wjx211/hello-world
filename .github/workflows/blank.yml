@@ -1,8 +1,8 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: wjx_test
+run-name: ${{ github.actor }} wjx_runname 🚀
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  wjx_tActions:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -15,4 +15,5 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+          skopeo --help
       - run: echo "🍏 This job's status is ${{ job.status }}."
