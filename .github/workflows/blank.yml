@@ -18,6 +18,6 @@ jobs:
           skopeo --help
           docker info
           docker images
-          docker login  --username=王建新 -p Al3686312 registry.cn-beijing.aliyuncs.com
+          docker login  --username=王建新 -p xxxxxxx registry.cn-beijing.aliyuncs.com
           skopeo copy docker://library/hello-world  docker://registry.cn-beijing.aliyuncs.com/wjx_test/test:hello-world
       - run: echo "🍏 This job's status is ${{ job.status }}."
